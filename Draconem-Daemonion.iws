@@ -4,9 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/greatorator/ddtc/handler/ConfigurationHandler.java" line="34" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="968ad8f7-2350-40d0-ad5c-fa66e7f1d040" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Draconem-Daemonion.iws" />
-    </list>
+    <list default="true" id="968ad8f7-2350-40d0-ad5c-fa66e7f1d040" name="Default" comment="" />
     <ignored path="Draconem-Daemonion.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -1217,11 +1215,15 @@
       <created>1406670066453</created>
       <updated>1406670066453</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Day 2 update">
+      <created>1406670641989</created>
+      <updated>1406670641989</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="886" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
