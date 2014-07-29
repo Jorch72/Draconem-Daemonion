@@ -4,7 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/greatorator/ddtc/handler/ConfigurationHandler.java" line="34" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="968ad8f7-2350-40d0-ad5c-fa66e7f1d040" name="Default" comment="" />
+    <list default="true" id="968ad8f7-2350-40d0-ad5c-fa66e7f1d040" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Draconem-Daemonion.iws" afterPath="$PROJECT_DIR$/Draconem-Daemonion.iws" />
+    </list>
     <ignored path="Draconem-Daemonion.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
