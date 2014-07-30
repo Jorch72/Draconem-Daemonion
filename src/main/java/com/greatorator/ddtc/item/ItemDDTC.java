@@ -1,5 +1,6 @@
 package com.greatorator.ddtc.item;
 
+import com.greatorator.ddtc.creativetab.CreativeTabDDTC;
 import com.greatorator.ddtc.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -12,7 +13,7 @@ public class ItemDDTC extends Item
     public ItemDDTC()
     {
         super();
-        //this.setCreativeTab(CreativeTabLMRB.LMRB_TAB);
+        this.setCreativeTab(CreativeTabDDTC.DDTC_TAB);
     }
 
     @Override

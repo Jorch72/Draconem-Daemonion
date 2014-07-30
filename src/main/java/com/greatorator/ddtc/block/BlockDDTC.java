@@ -1,5 +1,6 @@
 package com.greatorator.ddtc.block;
 
+import com.greatorator.ddtc.creativetab.CreativeTabDDTC;
 import com.greatorator.ddtc.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -12,7 +13,7 @@ public class BlockDDTC extends Block
     public BlockDDTC(Material material)
     {
         super(material);
-        //this.setCreativeTab(CreativeTabDDTC.DDTC_TAB);
+        this.setCreativeTab(CreativeTabDDTC.DDTC_TAB);
     }
     public BlockDDTC()
     {
