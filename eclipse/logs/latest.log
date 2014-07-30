@@ -1,29 +1,36 @@
-[16:20:05] [main/INFO]: Setting user: ForgeDevName
-[16:20:08] [Client thread/INFO]: LWJGL Version: 2.9.1
-[16:20:20] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Draconem-Daemonion
-[16:20:21] [Sound Library Loader/INFO]: Sound engine started
-[16:20:24] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[16:20:24] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[16:20:25] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Draconem-Daemonion
-[16:20:25] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[16:20:25] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[16:20:26] [Sound Library Loader/INFO]: Sound engine started
-[16:20:32] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[16:20:32] [Server thread/INFO]: Generating keypair
-[16:20:33] [Server thread/INFO]: Preparing start region for level 0
-[16:20:34] [Server thread/INFO]: Preparing spawn area: 57%
-[16:20:35] [Server thread/INFO]: Changing view distance to 12, from 10
-[16:20:36] [Server thread/INFO]: ForgeDevName[local:E:e101d75f] logged in with entity id 252 at (-918.5, 4.0, -300.5)
-[16:20:36] [Server thread/INFO]: ForgeDevName joined the game
-[16:20:37] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2221ms behind, skipping 44 tick(s)
-[16:20:48] [Server thread/INFO]: Saving and pausing game...
-[16:20:48] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[16:20:48] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[16:20:48] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[16:20:50] [Server thread/INFO]: Stopping server
-[16:20:50] [Server thread/INFO]: Saving players
-[16:20:50] [Server thread/INFO]: Saving worlds
-[16:20:50] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[16:20:50] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[16:20:50] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[16:20:51] [Client thread/INFO]: Stopping!
+[17:45:51] [main/INFO]: Setting user: ForgeDevName
+[17:45:53] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:46:04] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Draconem Daemonion
+[17:46:06] [Sound Library Loader/INFO]: Sound engine started
+[17:46:09] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[17:46:09] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:46:09] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Draconem Daemonion
+[17:46:09] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:46:10] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[17:46:11] [Sound Library Loader/INFO]: Sound engine started
+[17:46:18] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[17:46:18] [Server thread/INFO]: Generating keypair
+[17:46:22] [Server thread/INFO]: Preparing start region for level 0
+[17:46:23] [Server thread/INFO]: Preparing spawn area: 62%
+[17:46:24] [Server thread/INFO]: Changing view distance to 12, from 10
+[17:46:25] [Server thread/INFO]: ForgeDevName[local:E:78f65a75] logged in with entity id 281 at (-917.483347402063, 6.103519174653562, -298.69999998807907)
+[17:46:25] [Server thread/INFO]: ForgeDevName joined the game
+[17:46:27] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2735ms behind, skipping 54 tick(s)
+[17:46:37] [Client thread/INFO]: [CHAT] draconemdaemonion:dragonFlower, draconemdaemonion:heart
+[17:46:40] [Server thread/INFO]: [ForgeDevName: Given [Dragon Flower] * 1 to ForgeDevName]
+[17:46:40] [Client thread/INFO]: [CHAT] Given [Dragon Flower] * 1 to ForgeDevName
+[17:46:46] [Client thread/INFO]: [CHAT] draconemdaemonion:dragonFlower, draconemdaemonion:heart
+[17:46:46] [Client thread/INFO]: [CHAT] draconemdaemonion:dragonFlower, draconemdaemonion:heart
+[17:46:47] [Server thread/INFO]: [ForgeDevName: Given [Flaming Heart of Love] * 1 to ForgeDevName]
+[17:46:47] [Client thread/INFO]: [CHAT] Given [Flaming Heart of Love] * 1 to ForgeDevName
+[17:46:56] [Server thread/INFO]: Saving and pausing game...
+[17:46:56] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:46:56] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:46:56] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:46:57] [Server thread/INFO]: Stopping server
+[17:46:57] [Server thread/INFO]: Saving players
+[17:46:57] [Server thread/INFO]: Saving worlds
+[17:46:57] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:46:57] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:46:57] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:46:59] [Client thread/INFO]: Stopping!

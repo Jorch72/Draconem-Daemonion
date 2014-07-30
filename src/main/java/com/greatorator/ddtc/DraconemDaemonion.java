@@ -1,6 +1,7 @@
 package com.greatorator.ddtc;
 
 import com.greatorator.ddtc.handler.ConfigurationHandler;
+import com.greatorator.ddtc.init.ModBlocks;
 import com.greatorator.ddtc.init.ModItems;
 import com.greatorator.ddtc.proxy.IProxy;
 import com.greatorator.ddtc.reference.Reference;
@@ -28,6 +29,8 @@ public class DraconemDaemonion
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 
         ModItems.init();
+
+        ModBlocks.init();
 
         LogHelper.info("Pre Initialization Complete!");
     }
