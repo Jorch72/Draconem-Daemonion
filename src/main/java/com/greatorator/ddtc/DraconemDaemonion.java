@@ -3,7 +3,8 @@ package com.greatorator.ddtc;
 import com.greatorator.ddtc.handler.ConfigurationHandler;
 import com.greatorator.ddtc.init.ModBlocks;
 import com.greatorator.ddtc.init.ModItems;
-import com.greatorator.ddtc.proxy.IProxy;
+import com.greatorator.ddtc.mobs.EntityDDTC;
+import com.greatorator.ddtc.proxy.ServerProxy;
 import com.greatorator.ddtc.reference.Reference;
 import com.greatorator.ddtc.utility.LogHelper;
 import cpw.mods.fml.common.FMLCommonHandler;
@@ -20,17 +21,19 @@ public class DraconemDaemonion
     public static DraconemDaemonion instance;
 
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
-    public static IProxy proxy;
+    public static ServerProxy proxy;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+        proxy.registerRenderers();
 
         ModItems.init();
 
         ModBlocks.init();
+
 
         LogHelper.info("Pre Initialization Complete!");
     }
@@ -38,6 +41,8 @@ public class DraconemDaemonion
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
+        EntityDDTC.init();
+
         LogHelper.info("Initialization Complete!");
     }
 
