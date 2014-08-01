@@ -13,7 +13,7 @@ import net.minecraft.util.ResourceLocation;
 public class RenderDraconem extends RenderLiving
 {
     private static final ResourceLocation mobTextures = new ResourceLocation(Reference.MOD_ID + ":textures/mobs/draconem.png");
-    private static final String __OBFID = "CL_00000984";
+    //private static final String __OBFID = "CL_00000984"; This is related to minecraft code obfuscation you dont need it
 
     public RenderDraconem(ModelBase par1ModelBase, float par2)
     {
