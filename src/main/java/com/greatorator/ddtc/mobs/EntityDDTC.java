@@ -3,10 +3,11 @@ package com.greatorator.ddtc.mobs;
 import com.greatorator.ddtc.reference.Reference;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import net.minecraft.entity.EntityList;
+import net.minecraft.item.Item;
 
 import java.util.Random;
 
-public class EntityDDTC
+public class EntityDDTC extends Item
 {
     public static void init()
     {
