@@ -1,0 +1,32 @@
+[21:46:46] [main/INFO]: Setting user: ForgeDevName
+[21:46:49] [Client thread/INFO]: LWJGL Version: 2.9.1
+[21:46:50] [Client thread/ERROR]: Couldn't initialize twitch stream
+[21:46:59] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Draconem Daemonion
+[21:47:00] [Sound Library Loader/INFO]: Sound engine started
+[21:47:03] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[21:47:03] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[21:47:03] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Draconem Daemonion
+[21:47:04] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[21:47:04] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[21:47:05] [Sound Library Loader/INFO]: Sound engine started
+[21:47:27] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[21:47:27] [Server thread/INFO]: Generating keypair
+[21:47:28] [Server thread/INFO]: Preparing start region for level 0
+[21:47:29] [Server thread/INFO]: Preparing spawn area: 48%
+[21:47:29] [Server thread/INFO]: Changing view distance to 12, from 10
+[21:47:30] [Server thread/INFO]: ForgeDevName[local:E:3674e275] logged in with entity id 237 at (-840.7667292624394, 5.0, 898.008124942046)
+[21:47:30] [Server thread/INFO]: ForgeDevName joined the game
+[21:47:37] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:entity.wolf.bark
+[21:47:37] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:entity.wolf.bark
+[21:47:40] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:entity.wolf.bark
+[21:47:41] [Server thread/INFO]: Saving and pausing game...
+[21:47:41] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[21:47:41] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[21:47:41] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[21:47:42] [Server thread/INFO]: Stopping server
+[21:47:42] [Server thread/INFO]: Saving players
+[21:47:42] [Server thread/INFO]: Saving worlds
+[21:47:42] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[21:47:42] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[21:47:42] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[21:47:44] [Client thread/INFO]: Stopping!
