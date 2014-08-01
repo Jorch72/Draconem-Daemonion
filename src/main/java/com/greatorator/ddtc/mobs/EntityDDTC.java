@@ -3,21 +3,21 @@ package com.greatorator.ddtc.mobs;
 import com.greatorator.ddtc.reference.Reference;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import net.minecraft.entity.EntityList;
-import net.minecraft.item.Item;
 
 import java.util.Random;
 
-public class EntityDDTC extends Item
+public class EntityDDTC
 {
-    public static void registerEntity()
-    {
-        createEntity(EntityBear.class, "Bear");
-    }
-
     public static void init()
     {
-        registerEntity();
+    registerEntity();
     }
+    public static void registerEntity()
+    {
+        createEntity(EntityDraconem.class, "Draconem");
+    }
+
+
 
     public static void createEntity(Class entityClass, String entityName)
     {

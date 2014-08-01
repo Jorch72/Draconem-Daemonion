@@ -28,12 +28,12 @@ public class DraconemDaemonion
     {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
-        proxy.registerRenderers();
 
         ModItems.init();
-
         ModBlocks.init();
+        EntityDDTC.init();
 
+        proxy.registerRenderThings();
 
         LogHelper.info("Pre Initialization Complete!");
     }
@@ -41,8 +41,6 @@ public class DraconemDaemonion
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
-        EntityDDTC.init();
-
         LogHelper.info("Initialization Complete!");
     }
 

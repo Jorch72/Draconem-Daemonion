@@ -1,14 +1,15 @@
 package com.greatorator.ddtc.proxy;
 
-import com.greatorator.ddtc.mobs.EntityBear;
-import com.greatorator.ddtc.mobs.models.ModelBear;
-import com.greatorator.ddtc.mobs.renders.RenderBear;
+import com.greatorator.ddtc.mobs.EntityDraconem;
+import com.greatorator.ddtc.mobs.renders.RenderDraconem;
 import cpw.mods.fml.client.registry.RenderingRegistry;
+import net.minecraft.client.model.ModelBiped;
 
 public class ClientProxy extends ServerProxy
 {
-    public void registerRenderers()
+    @Override
+    public void registerRenderThings()
     {
-        RenderingRegistry.registerEntityRenderingHandler(EntityBear.class, new RenderBear(new ModelBear(), 0.3F));
+        RenderingRegistry.registerEntityRenderingHandler(EntityDraconem.class, new RenderDraconem(new ModelBiped(), 0));
     }
 }
