@@ -26,6 +26,8 @@ public class DraconemDaemonion
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
+        LogHelper.info("Well now, let's get this party started!");
+
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 
