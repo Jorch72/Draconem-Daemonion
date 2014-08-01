@@ -11,7 +11,7 @@ public class ClientProxy extends ServerProxy
     @Override
     public void registerRenderThings()
     {
-		LogHelper.info("ClientProxy/registerRenderThings");
+		LogHelper.info("Populating world with vim and vigor!");
         RenderingRegistry.registerEntityRenderingHandler(EntityDraconem.class, new RenderDraconem(new ModelBiped(), 0));
     }
 }
