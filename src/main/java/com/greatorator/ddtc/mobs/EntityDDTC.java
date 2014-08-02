@@ -18,8 +18,6 @@ public class EntityDDTC extends Item
         createEntity(EntityDraconem.class, "Draconem");
     }
 
-
-
     public static void createEntity(Class entityClass, String entityName)
     {
         int randomId = EntityRegistry.findGlobalUniqueEntityId();
