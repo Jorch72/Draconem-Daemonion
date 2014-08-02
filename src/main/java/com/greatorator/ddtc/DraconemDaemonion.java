@@ -2,8 +2,8 @@ package com.greatorator.ddtc;
 
 import com.greatorator.ddtc.handler.ConfigurationHandler;
 import com.greatorator.ddtc.init.ModBlocks;
+import com.greatorator.ddtc.init.ModEntity;
 import com.greatorator.ddtc.init.ModItems;
-import com.greatorator.ddtc.mobs.EntityDDTC;
 import com.greatorator.ddtc.proxy.ServerProxy;
 import com.greatorator.ddtc.reference.Reference;
 import com.greatorator.ddtc.utility.LogHelper;
@@ -33,11 +33,11 @@ public class DraconemDaemonion
 
         ModItems.init();
         ModBlocks.init();
-        EntityDDTC.init();
+        ModEntity.init();
 
         proxy.registerRenderThings();
 
-        LogHelper.info("Pre Initialization Complete!");
+        LogHelper.info("Now that was an awesome party!");
     }
 
     @Mod.EventHandler

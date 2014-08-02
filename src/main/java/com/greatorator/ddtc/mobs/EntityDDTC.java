@@ -1,24 +1,17 @@
 package com.greatorator.ddtc.mobs;
 
+import com.greatorator.ddtc.item.EggChucker;
 import com.greatorator.ddtc.reference.Reference;
 import cpw.mods.fml.common.registry.EntityRegistry;
-import net.minecraft.entity.EntityList;
+import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 
 import java.util.Random;
 
 public class EntityDDTC extends Item
 {
-    public static void init()
-    {
-    registerEntity();
-    }
-    public static void registerEntity()
-    {
-        createEntity(EntityDraconem.class, "Draconem");
-    }
 
-    public static void createEntity(Class entityClass, String entityName)
+    public static void registerEntityWithEgg(Class entityClass, String entityName)
     {
         int randomId = EntityRegistry.findGlobalUniqueEntityId();
         long seed = entityName.hashCode();
@@ -26,12 +19,15 @@ public class EntityDDTC extends Item
         int solidColor = rand.nextInt() * 16777215;
         int spotColor = rand.nextInt() * 16777215;
 
-        EntityRegistry.registerGlobalEntityID(entityClass, entityName, randomId);
-        EntityRegistry.registerModEntity(entityClass, entityName, randomId, Reference.MOD_ID, 32, 1, true);
-        createEgg(randomId, solidColor, spotColor);
+        EntityRegistry.registerModEntity(entityClass, entityName, randomId, Reference.MOD_ID, 80, 3, false);
+        registerSpawnEgg(entityName, solidColor, spotColor);
     }
-    private static void createEgg(int randomId, int solidColor, int spotColor)
+
+    // can't use vanilla spawn eggs with entities registered with modEntityID, so use
+// custom eggs. Name passed must match entity name string
+    public static void registerSpawnEgg(String entityName, int solidColor, int spotColor)
     {
-        EntityList.entityEggs.put(Integer.valueOf(randomId), new EntityList.EntityEggInfo(randomId, solidColor, spotColor));
+        Item itemSpawnEgg = new EggChucker(entityName, solidColor, spotColor).setUnlocalizedName("spawn_egg_"+entityName.toLowerCase()).setTextureName(Reference.MOD_ID + ":spawn_egg");
+        GameRegistry.registerItem(itemSpawnEgg, "spawnEgg"+entityName);
     }
 }
