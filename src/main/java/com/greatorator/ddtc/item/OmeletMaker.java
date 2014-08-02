@@ -8,6 +8,8 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
 
+import java.util.Random;
+
 public class OmeletMaker extends EntityThrowable
 {
     protected String entityToSpawnName = "";
@@ -49,7 +51,7 @@ public class OmeletMaker extends EntityThrowable
         {
             entityToSpawn = (EntityAnimal) EntityList.createEntityByName(entityToSpawnName,
                     worldObj);
-            entityToSpawn.setGrowingAge(-24000);
+            entityToSpawn.setGrowingAge(1000);
             entityToSpawn.setLocationAndAngles(posX, posY, posZ, rotationYaw, 0.0F);
             worldObj.spawnEntityInWorld(entityToSpawn);
         }
