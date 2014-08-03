@@ -5,10 +5,6 @@ import com.greatorator.ddtc.item.ItemDDTC;
 import com.greatorator.ddtc.item.ItemDragonFlower;
 import com.greatorator.ddtc.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.entity.EntityLiving;
-import net.minecraft.item.Item;
-
-import java.util.Random;
 
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ModItems
