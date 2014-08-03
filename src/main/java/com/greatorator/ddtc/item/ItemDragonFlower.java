@@ -9,6 +9,5 @@ public class ItemDragonFlower extends ItemDDTC
     {
         super();
         this.setUnlocalizedName("dragonFlower");
-		ModItems.register(this);
     }
 }
