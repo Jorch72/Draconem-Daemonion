@@ -27,8 +27,8 @@ public class EggChucker extends ItemDDTC
     public EggChucker()
     {
         this.setCreativeTab(CreativeTabDDTC.DDTC_TAB);
+		this.setUnlocalizedName("eggChucker");
 		this.setHasSubtypes(true);
-		ModItems.register(this);
     }
 
 	@SuppressWarnings("unchecked")
