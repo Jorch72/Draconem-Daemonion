@@ -2,6 +2,7 @@ package com.greatorator.ddtc.mobs;
 
 import com.greatorator.ddtc.item.EggChucker;
 import com.greatorator.ddtc.reference.Reference;
+import com.greatorator.ddtc.utility.LogHelper;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
@@ -19,7 +20,11 @@ public class EntityDDTC extends Item
         int solidColor = rand.nextInt() * 16777215;
         int spotColor = rand.nextInt() * 16777215;
 
+        LogHelper.info("For the love of god, why doesn't this work?");
+        EntityRegistry.registerGlobalEntityID(entityClass, entityName, randomId);
+        LogHelper.info("Please work, please work, please, please, please");
         EntityRegistry.registerModEntity(entityClass, entityName, randomId, Reference.MOD_ID, 80, 3, false);
+        LogHelper.info("So good so far?");
         registerSpawnEgg(entityName, solidColor, spotColor);
     }
 
