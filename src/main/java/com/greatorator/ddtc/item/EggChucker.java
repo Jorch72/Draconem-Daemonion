@@ -1,58 +1,68 @@
 package com.greatorator.ddtc.item;
 
 import com.greatorator.ddtc.creativetab.CreativeTabDDTC;
+import com.greatorator.ddtc.init.ModEntity;
+import com.greatorator.ddtc.init.ModItems;
+import com.greatorator.ddtc.mobs.EntityBear;
+import com.greatorator.ddtc.mobs.EntityDraconem;
 import com.greatorator.ddtc.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
-public class EggChucker extends Item
-{
+import java.util.List;
+import java.util.Random;
 
-    public int colorBase;
-    public int colorSpots;
-    public String entityToSpawnName = "";
-    protected String entityToSpawnNameFull = "";
-    protected OmeletMaker entityEgg;
+public class EggChucker extends ItemDDTC
+{
     private IIcon theIcon;
 
-    public EggChucker(String entityName, int solidColor, int spotColor)
+    public EggChucker()
     {
-        this.maxStackSize = 64;
         this.setCreativeTab(CreativeTabDDTC.DDTC_TAB);
-        entityToSpawnName = entityName;
-        entityToSpawnNameFull = Reference.MOD_ID + "." + entityToSpawnName;
-        colorBase = solidColor;
-        colorSpots = spotColor;
+		this.setHasSubtypes(true);
+		ModItems.register(this);
     }
 
-    @Override
-    public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer) {
-        if (!par3EntityPlayer.capabilities.isCreativeMode) {
-            --par1ItemStack.stackSize;
+	@SuppressWarnings("unchecked")
+	@Override
+	public void getSubItems(Item item, CreativeTabs p_150895_2_, List list) {
+		list.add(new ItemStack(item, 1, ModEntity.EntityBearId));
+		list.add(new ItemStack(item, 1, ModEntity.EntityDraconemId));
+	}
+
+	@Override
+    public ItemStack onItemRightClick(ItemStack stack, World world, EntityPlayer player) {
+        if (!player.capabilities.isCreativeMode) {
+            --stack.stackSize;
         }
 
-        par2World.playSoundAtEntity(par3EntityPlayer, "random.bow", 0.5F, 0.4F /
-                (itemRand.nextFloat() * 0.4F + 0.8F));
+        world.playSoundAtEntity(player, "random.bow", 0.5F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
 
-        if (!par2World.isRemote) {
-            entityEgg = new OmeletMaker(par2World, par3EntityPlayer);
-            entityEgg.setEntityToSpawn(entityToSpawnNameFull);
-            par2World.spawnEntityInWorld(entityEgg);
+        if (!world.isRemote) {
+            OmeletMaker entityEgg = new OmeletMaker(world, player, getEntityFromId(stack.getItemDamage(), world));
+            world.spawnEntityInWorld(entityEgg);
         }
 
-        return par1ItemStack;
+        return stack;
     }
 
     @Override
     @SideOnly(Side.CLIENT)
-    public int getColorFromItemStack(ItemStack par1ItemStack, int parColorType) {
-        return (parColorType == 0) ? colorBase : colorSpots;
+    public int getColorFromItemStack(ItemStack stack, int parColorType) {
+		long seed = getEntityFromId(stack.getItemDamage(), null).getCommandSenderName().hashCode();
+		Random rand = new Random(seed);
+		int solidColor = rand.nextInt() * 16777215;
+		int spotColor = rand.nextInt() * 16777215;
+
+		return (parColorType == 0) ? solidColor : spotColor;
     }
 
     @Override
@@ -64,16 +74,15 @@ public class EggChucker extends Item
     @Override
     // Doing this override means that there is no localization for language
     // unless you specifically check for localization here and convert
-    public String getItemStackDisplayName(ItemStack par1ItemStack) {
-        return "Spawn " + entityToSpawnName;
+    public String getItemStackDisplayName(ItemStack stack) {
+        return "Spawn " + getEntityFromId(stack.getItemDamage(), null).getCommandSenderName();
     }
 
-
-    @Override
+	@Override
     @SideOnly(Side.CLIENT)
-    public void registerIcons(IIconRegister par1IconRegister) {
-        super.registerIcons(par1IconRegister);
-        this.theIcon = par1IconRegister.registerIcon(this.getIconString() + "_overlay");
+    public void registerIcons(IIconRegister iconRegister) {
+		itemIcon = iconRegister.registerIcon(Reference.MOD_ID + ":spawn_egg");
+        theIcon = iconRegister.registerIcon(Reference.MOD_ID + ":spawn_egg_overlay");
     }
 
     /**
@@ -84,4 +93,18 @@ public class EggChucker extends Item
     public IIcon getIconFromDamageForRenderPass(int par1, int par2) {
         return par2 > 0 ? this.theIcon : super.getIconFromDamageForRenderPass(par1, par2);
     }
+
+	public EntityLiving getEntityFromId(int id, World world){
+		EntityLiving entity = null;
+		switch (id){
+			case ModEntity.EntityBearId :
+				entity = new EntityBear(world);
+				break;
+			case ModEntity.EntityDraconemId :
+				entity = new EntityDraconem(world);
+				break;
+		}
+
+		return entity;
+	}
 }

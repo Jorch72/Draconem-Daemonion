@@ -1,6 +1,7 @@
 package com.greatorator.ddtc.item;
 
 import net.minecraft.entity.EntityList;
+import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.passive.EntityAnimal;
 import net.minecraft.entity.projectile.EntityThrowable;
@@ -12,27 +13,17 @@ import java.util.Random;
 
 public class OmeletMaker extends EntityThrowable
 {
-    protected String entityToSpawnName = "";
-    protected EntityAnimal entityToSpawn;
+    protected EntityLiving entityToSpawn; //by using EntityAnimal you are restricting yourself to passive mobs use EntityLiving instead
 
     public OmeletMaker(World par1World)
     {
         super(par1World);
     }
 
-    public OmeletMaker(World par1World, EntityLivingBase par2EntityLivingBase)
+    public OmeletMaker(World par1World, EntityLivingBase par2EntityLivingBase, EntityLiving mob)
     {
         super(par1World, par2EntityLivingBase);
-    }
-
-    public void setEntityToSpawn(String parEntityToSpawnName)
-    {
-        entityToSpawnName = parEntityToSpawnName;
-    }
-
-    public String getEntityToSpawn()
-    {
-        return entityToSpawnName;
+		this.entityToSpawn = mob;
     }
 
     /**
@@ -48,8 +39,6 @@ public class OmeletMaker extends EntityThrowable
 
         if (!worldObj.isRemote) // never spawn entity on client side
         {
-            entityToSpawn = (EntityAnimal) EntityList.createEntityByName(entityToSpawnName, worldObj);
-            entityToSpawn.setGrowingAge(1000);
             entityToSpawn.setLocationAndAngles(posX, posY, posZ, rotationYaw, 0.0F);
             worldObj.spawnEntityInWorld(entityToSpawn);
         }
