@@ -2,9 +2,10 @@ package com.greatorator.ddtc.item;
 
 import com.greatorator.ddtc.creativetab.CreativeTabDDTC;
 import com.greatorator.ddtc.init.ModEntity;
-import com.greatorator.ddtc.init.ModItems;
-import com.greatorator.ddtc.mobs.EntityBear;
-import com.greatorator.ddtc.mobs.EntityDraconem;
+import com.greatorator.ddtc.mobs.EntityDonatello;
+import com.greatorator.ddtc.mobs.EntityLeonardo;
+import com.greatorator.ddtc.mobs.EntityMichaelangelo;
+import com.greatorator.ddtc.mobs.EntityRaphael;
 import com.greatorator.ddtc.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -34,8 +35,10 @@ public class EggChucker extends ItemDDTC
 	@SuppressWarnings("unchecked")
 	@Override
 	public void getSubItems(Item item, CreativeTabs p_150895_2_, List list) {
-		list.add(new ItemStack(item, 1, ModEntity.EntityBearId));
-		list.add(new ItemStack(item, 1, ModEntity.EntityDraconemId));
+		list.add(new ItemStack(item, 1, ModEntity.EntityLeonardoId));
+        list.add(new ItemStack(item, 1, ModEntity.EntityRaphaelId));
+        list.add(new ItemStack(item, 1, ModEntity.EntityMichaelangeloId));
+        list.add(new ItemStack(item, 1, ModEntity.EntityDonatelloId));
 	}
 
 	@Override
@@ -97,12 +100,18 @@ public class EggChucker extends ItemDDTC
 	public EntityLiving getEntityFromId(int id, World world){
 		EntityLiving entity = null;
 		switch (id){
-			case ModEntity.EntityBearId :
-				entity = new EntityBear(world);
+			case ModEntity.EntityLeonardoId :
+				entity = new EntityLeonardo(world);
 				break;
-			case ModEntity.EntityDraconemId :
-				entity = new EntityDraconem(world);
-				break;
+            case ModEntity.EntityRaphaelId :
+                entity = new EntityRaphael(world);
+                break;
+            case ModEntity.EntityMichaelangeloId :
+                entity = new EntityMichaelangelo(world);
+                break;
+            case ModEntity.EntityDonatelloId :
+                entity = new EntityDonatello(world);
+                break;
 		}
 
 		return entity;

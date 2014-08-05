@@ -7,9 +7,9 @@ import net.minecraft.entity.passive.EntityAnimal;
 import net.minecraft.init.Items;
 import net.minecraft.world.World;
 
-public class EntityBear extends EntityAnimal
+public class EntityDonatello extends EntityAnimal
 {
-    public EntityBear(World par1World)
+    public EntityDonatello(World par1World)
     {
         super(par1World);
         this.setSize(0.9F, 1.9F);
@@ -35,6 +35,6 @@ public class EntityBear extends EntityAnimal
     @Override
     public EntityAgeable createChild(EntityAgeable var1)
     {
-        return new EntityBear(worldObj);
+        return new EntityDonatello(worldObj);
     }
 }

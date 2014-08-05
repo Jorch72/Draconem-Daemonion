@@ -7,9 +7,9 @@ import net.minecraft.entity.passive.EntityAnimal;
 import net.minecraft.init.Items;
 import net.minecraft.world.World;
 
-public class EntityDraconem extends EntityAnimal
+public class EntityRaphael extends EntityAnimal
 {
-    public EntityDraconem(World par1World)
+    public EntityRaphael(World par1World)
     {
         super(par1World);
         this.setSize(0.9F, 1.9F);
@@ -35,6 +35,6 @@ public class EntityDraconem extends EntityAnimal
     @Override
     public EntityAgeable createChild(EntityAgeable var1)
     {
-        return new EntityDraconem(worldObj);
+        return new EntityRaphael(worldObj);
     }
 }

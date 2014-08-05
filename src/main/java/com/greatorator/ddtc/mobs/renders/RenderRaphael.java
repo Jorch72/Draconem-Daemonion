@@ -1,6 +1,6 @@
 package com.greatorator.ddtc.mobs.renders;
 
-import com.greatorator.ddtc.mobs.EntityDraconem;
+import com.greatorator.ddtc.mobs.EntityRaphael;
 import com.greatorator.ddtc.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -10,11 +10,11 @@ import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
 
 @SideOnly(Side.CLIENT)
-public class RenderDraconem extends RenderLiving
+public class RenderRaphael extends RenderLiving
 {
-    private static final ResourceLocation mobTextures = new ResourceLocation(Reference.MOD_ID + ":textures/mobs/draconem.png");
+        private static final ResourceLocation mobTextures = new ResourceLocation(Reference.MOD_ID + ":textures/mobs/raphael.png");
 
-    public RenderDraconem(ModelBase par1ModelBase, float par2)
+    public RenderRaphael(ModelBase par1ModelBase, float par2)
     {
         super(par1ModelBase, par2);
     }
@@ -22,7 +22,7 @@ public class RenderDraconem extends RenderLiving
     /**
      * Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
      */
-    protected ResourceLocation getEntityTexture(EntityDraconem par1EntityCow)
+    protected ResourceLocation getEntityTexture(EntityRaphael par1EntityCow)
     {
         return mobTextures;
     }
@@ -32,6 +32,6 @@ public class RenderDraconem extends RenderLiving
      */
     protected ResourceLocation getEntityTexture(Entity par1Entity)
     {
-        return this.getEntityTexture((EntityDraconem)par1Entity);
+        return this.getEntityTexture((EntityRaphael)par1Entity);
     }
 }

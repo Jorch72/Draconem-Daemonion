@@ -2,5 +2,7 @@ item.draconemdaemonion:dragonFlower.name=Dragon Flower
 tile.draconemdaemonion:heart.name=Flaming Heart of Love
 itemGroup.draconemdaemonion=Draconem Daemonion
 
-entity.draconemdaemonion.Draconem.name=Draconem
-entity.draconemdaemonion.Bear.name=Bear
+entity.draconemdaemonion.Raphael.name=Raphael
+entity.draconemdaemonion.Leonardo.name=Leonardo
+entity.draconemdaemonion.Michaelangelo.name=Michaelangelo
+entity.draconemdaemonion.Donatello.name=Donatello
