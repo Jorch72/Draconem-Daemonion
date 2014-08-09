@@ -4,6 +4,7 @@ import com.greatorator.ddtc.mobs.EntityDonatello;
 import com.greatorator.ddtc.mobs.EntityLeonardo;
 import com.greatorator.ddtc.mobs.EntityMichaelangelo;
 import com.greatorator.ddtc.mobs.EntityRaphael;
+import com.greatorator.ddtc.mobs.familiars.FamiliarDraconem;
 import com.greatorator.ddtc.mobs.renders.RenderDonatello;
 import com.greatorator.ddtc.mobs.renders.RenderLeonardo;
 import com.greatorator.ddtc.mobs.renders.RenderMichaelangelo;
@@ -11,6 +12,8 @@ import com.greatorator.ddtc.mobs.renders.RenderRaphael;
 import com.greatorator.ddtc.utility.LogHelper;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import net.minecraft.client.model.ModelBiped;
+import net.minecraft.client.model.ModelDragon;
+import net.minecraft.client.renderer.entity.RenderDragon;
 
 public class ClientProxy extends ServerProxy
 {

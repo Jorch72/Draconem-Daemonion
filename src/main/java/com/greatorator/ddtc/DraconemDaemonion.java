@@ -1,9 +1,7 @@
 package com.greatorator.ddtc;
 
 import com.greatorator.ddtc.handler.ConfigurationHandler;
-import com.greatorator.ddtc.init.ModBlocks;
-import com.greatorator.ddtc.init.ModEntity;
-import com.greatorator.ddtc.init.ModItems;
+import com.greatorator.ddtc.init.*;
 import com.greatorator.ddtc.proxy.ServerProxy;
 import com.greatorator.ddtc.reference.Reference;
 import com.greatorator.ddtc.utility.LogHelper;
@@ -31,9 +29,14 @@ public class DraconemDaemonion
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 
+        LogHelper.info("Inputting surprises...");
         ModItems.init();
+        LogHelper.info("Building walls...");
         ModBlocks.init();
+        LogHelper.info("Sending out invites....");
         ModEntity.init();
+        LogHelper.info("Beautification in progress...");
+        ModPlants.init();
 
         proxy.registerRenderThings();
 
@@ -43,6 +46,7 @@ public class DraconemDaemonion
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
+        Recipes.init();
         LogHelper.info("Initialization Complete!");
     }
 

@@ -1,6 +1,10 @@
-item.draconemdaemonion:dragonFlower.name=Dragon Flower
-tile.draconemdaemonion:heart.name=Flaming Heart of Love
 itemGroup.draconemdaemonion=Draconem Daemonion
+
+plants.draconemdaemonion:dragonFlower.name=Dragon Flower
+
+tile.draconemdaemonion:heart.name=Flaming Heart of Love
+
+item.draconemdaemonion:tabIcon.name=Tab Icon
 
 entity.draconemdaemonion.Raphael.name=Raphael
 entity.draconemdaemonion.Leonardo.name=Leonardo

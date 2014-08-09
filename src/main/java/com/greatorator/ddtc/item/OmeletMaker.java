@@ -7,8 +7,6 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
 
-import java.util.Random;
-
 public class OmeletMaker extends EntityThrowable
 {
     protected EntityLiving entityToSpawn; //by using EntityAnimal you are restricting yourself to passive mobs use EntityLiving instead

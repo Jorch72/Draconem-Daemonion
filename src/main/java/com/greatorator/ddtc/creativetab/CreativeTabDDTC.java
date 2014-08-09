@@ -12,7 +12,7 @@ public class CreativeTabDDTC
         @Override
         public Item getTabIconItem()
         {
-            return ModItems.dragonFlower;
+            return ModItems.itemCreativeTab;
         }
     };
 }
