@@ -45,7 +45,7 @@ public class FamiliarDraconemPart extends Entity
      */
     public boolean attackEntityFrom(DamageSource p_70097_1_, float p_70097_2_)
     {
-        return this.isEntityInvulnerable() ? false : this.familiarDragonObj.attackEntityFromPart(this, p_70097_1_, p_70097_2_);
+        return false;
     }
 
     /**

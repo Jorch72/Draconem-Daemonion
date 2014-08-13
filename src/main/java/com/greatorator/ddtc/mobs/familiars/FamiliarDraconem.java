@@ -3,6 +3,7 @@ package com.greatorator.ddtc.mobs.familiars;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockEndPortal;
 import net.minecraft.entity.*;
+import net.minecraft.entity.boss.EntityDragonPart;
 import net.minecraft.entity.boss.IBossDisplayData;
 import net.minecraft.entity.item.EntityEnderCrystal;
 import net.minecraft.entity.item.EntityXPOrb;
@@ -718,6 +719,11 @@ public class FamiliarDraconem extends EntityLiving implements IBossDisplayData, 
     public World func_82194_d()
     {
         return this.worldObj;
+    }
+
+    @Override
+    public boolean attackEntityFromPart(EntityDragonPart p_70965_1_, DamageSource p_70965_2_, float p_70965_3_) {
+        return false;
     }
 
     /**
