@@ -22,7 +22,7 @@ group= "com.greatorator.ddtc" // http://maven.apache.org/guides/mini/guide-namin
 archivesBaseName = "draconemdaemonion"
 
 minecraft {
-    version = "1.7.10-10.13.0.1189"
+    version = "1.7.10-10.13.2.1230"
 }
 
 dependencies {

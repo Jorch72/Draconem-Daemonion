@@ -6,7 +6,6 @@ import com.greatorator.ddtc.mobs.EntityDonatello;
 import com.greatorator.ddtc.mobs.EntityLeonardo;
 import com.greatorator.ddtc.mobs.EntityMichaelangelo;
 import com.greatorator.ddtc.mobs.EntityRaphael;
-import com.greatorator.ddtc.mobs.familiars.FamiliarDraconem;
 import com.greatorator.ddtc.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

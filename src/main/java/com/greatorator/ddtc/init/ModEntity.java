@@ -5,7 +5,6 @@ import com.greatorator.ddtc.mobs.EntityDonatello;
 import com.greatorator.ddtc.mobs.EntityLeonardo;
 import com.greatorator.ddtc.mobs.EntityMichaelangelo;
 import com.greatorator.ddtc.mobs.EntityRaphael;
-import com.greatorator.ddtc.mobs.familiars.FamiliarDraconem;
 import cpw.mods.fml.common.registry.EntityRegistry;
 
 public class ModEntity
